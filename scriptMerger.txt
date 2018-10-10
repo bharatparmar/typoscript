@@ -1,0 +1,20 @@
+config.compressJs = 0
+config.compressCss = 0
+
+plugin.tx_scriptmerger {
+  css.enable = 0
+  css.minify.enable = 0
+  css.compress.enable = 0
+  css.merge.enable = 0
+  css.compress.ignore = googleapis\.com
+  css.minify.ignore = googleapis\.com
+  css.merge.ignore = googleapis\.com
+
+  javascript.enable =0
+  javascript.minify.enable = 1
+  javascript.compress.enable = 1
+  javascript.merge.enable = 1
+  javascript.parseBody = 1
+
+  externalFileCacheLifetime = 0
+}
